@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+httpx
+ollama
+python-dotenv
+openai
+google-generativeai
+

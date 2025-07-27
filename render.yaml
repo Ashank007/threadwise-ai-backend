@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: threadwise-ai-backend
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "./start.sh"
+    envVars:
+      - key: PORT
+        value: 10000
+
