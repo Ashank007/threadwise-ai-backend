@@ -8,7 +8,7 @@ import json
 
 MODEL_PROVIDER = os.getenv("MODEL_PROVIDER", "ollama").lower()
 
-async def generate_reply(thread, role, tone, new_message=None, mode="generate"):
+async def generate_reply(thread, role, tone, new_message=None, mode="generate",api_key):
     if mode == "generate":
         prompt = build_prompt_generate(thread, role, tone)
     elif mode == "analyze":
@@ -23,7 +23,7 @@ async def generate_reply(thread, role, tone, new_message=None, mode="generate"):
     if MODEL_PROVIDER == "openai":
         raw_reply = await get_openai_reply(prompt)
     elif MODEL_PROVIDER == "gemini":
-        raw_reply = await get_gemini_reply(prompt)
+        raw_reply = await get_gemini_reply(prompt,api_key)
     elif MODEL_PROVIDER == "ollama":
          return await get_ollama_reply(prompt)
     else:
