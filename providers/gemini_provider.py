@@ -5,7 +5,7 @@ load_dotenv()
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-async def get_gemini_reply(prompt: str,api_key: str) -> str:
+async def get_gemini_reply(prompt: str,api_key:str) -> str:
     if not api_key:
         raise ValueError("Missing GOOGLE_API_KEY")
 
