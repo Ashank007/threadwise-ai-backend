@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange)
+
 # Thread AI - Backend
 
 This is the **backend service** for **Thread AI - Smart Email Reply Generator**.  
